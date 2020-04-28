@@ -19,7 +19,7 @@ $dbParams = array(
 	'port' => '5432',
     'dbname' => 'PHPDB',
     'user' => 'postgres',
-    'password' => '', 
+    'password' => 'brasil', 
     'charset' => 'utf8', 
 );
 
