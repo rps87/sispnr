@@ -1,0 +1,110 @@
+[15-Apr-2020 16:18:05 UTC] PHP Fatal error:  Uncaught Error: Class 'Setup' not found in C:\apache24\htdocs\pnr\dao\TDBCon.php:33
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TDBCon.php(15): TDBCon->__construct()
+#1 C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php(10): TDBCon::getInstance()
+#2 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(19): TUsuarioDAO->__construct()
+#3 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(13): TInterfaceDAO->__construct()
+#4 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(10): TInterfaceDAO::getInstance()
+#5 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(11): TUsuarioRN->__construct()
+#6 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(7): TUsuarioCT->__construct()
+#7 {main}
+  thrown in C:\apache24\htdocs\pnr\dao\TDBCon.php on line 33
+[15-Apr-2020 16:18:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Setup' not found in C:\apache24\htdocs\pnr\dao\TDBCon.php:33
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TDBCon.php(15): TDBCon->__construct()
+#1 C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php(10): TDBCon::getInstance()
+#2 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(19): TUsuarioDAO->__construct()
+#3 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(13): TInterfaceDAO->__construct()
+#4 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(10): TInterfaceDAO::getInstance()
+#5 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(11): TUsuarioRN->__construct()
+#6 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(7): TUsuarioCT->__construct()
+#7 {main}
+  thrown in C:\apache24\htdocs\pnr\dao\TDBCon.php on line 33
+[15-Apr-2020 16:18:54 UTC] PHP Fatal error:  Uncaught Error: Class 'Setup' not found in C:\apache24\htdocs\pnr\dao\TDBCon.php:33
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TDBCon.php(15): TDBCon->__construct()
+#1 C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php(10): TDBCon::getInstance()
+#2 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(19): TUsuarioDAO->__construct()
+#3 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(13): TInterfaceDAO->__construct()
+#4 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(10): TInterfaceDAO::getInstance()
+#5 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(11): TUsuarioRN->__construct()
+#6 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(7): TUsuarioCT->__construct()
+#7 {main}
+  thrown in C:\apache24\htdocs\pnr\dao\TDBCon.php on line 33
+[15-Apr-2020 16:22:26 UTC] PHP Notice:  Undefined variable: entitiesPath in C:\apache24\htdocs\pnr\dao\TDBCon.php on line 37
+[15-Apr-2020 16:22:26 UTC] PHP Notice:  Undefined variable: isDevMode in C:\apache24\htdocs\pnr\dao\TDBCon.php on line 37
+[15-Apr-2020 16:22:26 UTC] PHP Fatal error:  Uncaught TypeError: Argument 1 passed to Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration() must be of the type array, null given, called in C:\apache24\htdocs\pnr\dao\TDBCon.php on line 37 and defined in C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Tools\Setup.php:69
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TDBCon.php(37): Doctrine\ORM\Tools\Setup::createAnnotationMetadataConfiguration(NULL, NULL)
+#1 C:\apache24\htdocs\pnr\dao\TDBCon.php(19): TDBCon->__construct()
+#2 C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php(10): TDBCon::getInstance()
+#3 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(19): TUsuarioDAO->__construct()
+#4 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(13): TInterfaceDAO->__construct()
+#5 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(10): TInterfaceDAO::getInstance()
+#6 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(11): TUsuarioRN->__construct()
+#7 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(7): TUsuarioCT->__construct()
+#8 {main}
+  thrown in C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Tools\Setup.php on line 69
+[15-Apr-2020 16:24:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function salvar() on null in C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php:15
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(24): TUsuarioDAO->salvar(Object(Usuario))
+#1 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(15): TInterfaceDAO->salvarUsuario(Object(Usuario))
+#2 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(33): TUsuarioRN->salvarUsuario(Object(Usuario))
+#3 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(8): TUsuarioCT->enviarUsuario('BISONHO')
+#4 {main}
+  thrown in C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php on line 15
+[15-Apr-2020 16:43:51 UTC] PHP Fatal error:  Uncaught Error: Call to a member function salvar() on null in C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php:15
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(24): TUsuarioDAO->salvar(Object(Usuario))
+#1 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(15): TInterfaceDAO->salvarUsuario(Object(Usuario))
+#2 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(33): TUsuarioRN->salvarUsuario(Object(Usuario))
+#3 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(8): TUsuarioCT->enviarUsuario('BISONHO')
+#4 {main}
+  thrown in C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php on line 15
+[15-Apr-2020 16:47:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function salvar() on null in C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php:15
+Stack trace:
+#0 C:\apache24\htdocs\pnr\dao\TInterfaceDAO.php(24): TUsuarioDAO->salvar(Object(Usuario))
+#1 C:\apache24\htdocs\pnr\model\TUsuarioRN.php(15): TInterfaceDAO->salvarUsuario(Object(Usuario))
+#2 C:\apache24\htdocs\pnr\control\TUsuarioCT.php(33): TUsuarioRN->salvarUsuario(Object(Usuario))
+#3 C:\apache24\htdocs\pnr\view\usuario_view_controler.php(8): TUsuarioCT->enviarUsuario('BISONHO')
+#4 {main}
+  thrown in C:\apache24\htdocs\pnr\dao\TUsuarioDAO.php on line 15
+[15-Apr-2020 16:54:13 UTC] PHP Fatal error:  Uncaught Doctrine\Common\Annotations\AnnotationException: [Enum Error] Attribute "strategy" of @Doctrine\ORM\Mapping\GeneratedValue declared on property Usuario::$id accept only [AUTO, SEQUENCE, TABLE, IDENTITY, NONE, UUID, CUSTOM], but got SEQUENSE. in C:\apache24\htdocs\pnr\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php:168
+Stack trace:
+#0 C:\apache24\htdocs\pnr\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(783): Doctrine\Common\Annotations\AnnotationException::enumeratorError('strategy', 'Doctrine\\ORM\\Ma...', 'property Usuari...', Array, 'SEQUENSE')
+#1 C:\apache24\htdocs\pnr\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(661): Doctrine\Common\Annotations\DocParser->Annotation()
+#2 C:\apache24\htdocs\pnr\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\DocParser.php(354): Doctrine\Common\Annotations\DocParser->Annotations()
+#3 C:\apache24\htdocs\pnr\vendor\doctrine\annotations\lib\Doctrine\Common\Annotat in C:\apache24\htdocs\pnr\vendor\doctrine\annotations\lib\Doctrine\Common\Annotations\AnnotationException.php on line 168
+[15-Apr-2020 17:08:21 UTC] PHP Warning:  Uncaught PDOException: SQLSTATE[08006] [7] timeout expired in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php:27
+Stack trace:
+#0 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php(27): PDO->__construct('pgsql:host=loca...', 'admbdphp', 'brasil', Array)
+#1 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOPgSql\Driver.php(24): Doctrine\DBAL\Driver\PDOConnection->__construct('pgsql:host=loca...', 'admbdphp', 'brasil', Array)
+#2 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(362): Doctrine\DBAL\Driver\PDOPgSql\Driver->connect(Array, 'admbdphp', 'brasil', Array)
+#3 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(428): Doctrine\DBAL\Connection->connect()
+#4 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(388): Doctrine\DBAL\Connection->getDatabasePlatformVersion()
+#5 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Conn in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php on line 27
+[15-Apr-2020 17:08:21 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php on line 30
+[15-Apr-2020 18:02:46 UTC] PHP Fatal error:  Uncaught Doctrine\ORM\Mapping\MappingException: No identifier/primary key specified for Entity "Usuario". Every Entity must have an identifier/primary key. in C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Mapping\MappingException.php:52
+Stack trace:
+#0 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Mapping\ClassMetadataInfo.php(1009): Doctrine\ORM\Mapping\MappingException::identifierRequired('Usuario')
+#1 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Mapping\ClassMetadataFactory.php(266): Doctrine\ORM\Mapping\ClassMetadataInfo->validateIdentifier()
+#2 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Mapping\ClassMetadataFactory.php(246): Doctrine\ORM\Mapping\ClassMetadataFactory->validateRuntimeMetadata(Object(Doctrine\ORM\Mapping\ClassMetadata), NULL)
+#3 C:\apache24\htdocs\pnr\vendor\doctrine\persistence\lib\Doctrine\Persistence\Mapping\AbstractClassMetadataFactory.php(306): Doctrine\ORM\Mapping\ClassMetadataFactory->doLoadMetadata(Object(Doctrine\ORM\Mappi in C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Mapping\MappingException.php on line 52
+[15-Apr-2020 18:08:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42501]: Insufficient privilege: 7 ERRO:  permissão negada para sequência seq_id_user in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php:75
+Stack trace:
+#0 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOConnection.php(75): PDO->query('SELECT NEXTVAL(...')
+#1 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Connection.php(1015): Doctrine\DBAL\Driver\PDOConnection->query('SELECT NEXTVAL(...')
+#2 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Id\SequenceGenerator.php(80): Doctrine\DBAL\Connection->query('SELECT NEXTVAL(...')
+#3 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\UnitOfWork.php(949): Doctrine\ORM\Id\SequenceGenerator->generate(Object(Doctrine\ORM\EntityManager), Object(Usuario))
+#4 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\UnitOfWork.php(1780): Doctrine\ORM\UnitOfWork->persistNew(Object(Doctrine\ORM\Mapping\ClassMetadata), Object(Usuario))
+#5 C:\apac in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractPostgreSQLDriver.php on line 79
+[15-Apr-2020 18:09:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42601]: Syntax error: 7 ERRO:  erro de sintaxe em ou próximo a "user"
+LINE 1: INSERT INTO user (id, name) VALUES ($1, $2)
+                    ^ in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php:121
+Stack trace:
+#0 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(121): PDOStatement->execute(NULL)
+#1 C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Statement.php(153): Doctrine\DBAL\Driver\PDOStatement->execute(NULL)
+#2 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\Persisters\Entity\BasicEntityPersister.php(287): Doctrine\DBAL\Statement->execute()
+#3 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\UnitOfWork.php(1087): Doctrine\ORM\Persisters\Entity\BasicEntityPersister->executeInserts()
+#4 C:\apache24\htdocs\pnr\vendor\doctrine\orm\lib\Doctrine\ORM\UnitOfWork.php(400): Doctrine\ORM\UnitOfWork->executeInserts(Object(Doctrine\ORM\Mapping\ClassMetadata))
+#5 C:\apache24 in C:\apache24\htdocs\pnr\vendor\doctrine\dbal\lib\Doctrine\DBAL\Driver\AbstractPostgreSQLDriver.php on line 54
